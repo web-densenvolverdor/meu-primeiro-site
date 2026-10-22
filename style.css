@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: "Bangers", system-ui;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0f2747;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+h2 {
+    color: #1672ce;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #445369;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+}
+
+/* Cabeçalho do site */
+.topo {
+    background-color: #0f2747;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Nome no cabeçalho */
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Links de navegação */
+.topo nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.topo nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.topo nav a:hover {
+    color: #60a5fa;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+    .topo {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .topo nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .topo nav a {
+        font-size: 13px;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 12px;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+        overflow-wrap: anywhere;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
